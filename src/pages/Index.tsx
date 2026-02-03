@@ -3,7 +3,6 @@ import { ProfilePhoto } from "@/components/ProfilePhoto";
 import { Section, SectionTitle } from "@/components/Section";
 import { ResearchTopicCard } from "@/components/ResearchTopicCard";
 import { ProjectCard } from "@/components/ProjectCard";
-import { IdeasTopicCard } from "@/components/IdeasTopicCard";
 
 import llmInteractionImg from "@/assets/research-llm-interaction.jpg";
 import llmPsychologyImg from "@/assets/research-llm-psychology.jpg";
@@ -26,11 +25,11 @@ const Index = () => {
                 <h1 className="heading-display text-foreground">
                   Wenqing (Cecilia) Zhang
                 </h1>
-                <p className="text-lg text-accent font-medium mt-2">
+                <p className="text-lg text-accent font-medium mt-6">
                   Exploring Human-Centered AI for Social Good
                 </p>
                 <p className="text-muted-foreground mt-1">
-                  MSc in Computer Science, Western University, Canada
+                  MSc in Computer Science, Western University
                 </p>
                 <p className="text-body text-muted-foreground mt-6 leading-relaxed">
                   I study the intersection of <strong className="text-foreground">large language models</strong> and{" "}
@@ -57,18 +56,13 @@ const Index = () => {
                 </blockquote>
                 <div className="mt-6 space-y-4 text-body text-muted-foreground">
                   <p>
-                    My research is driven by a fundamental question: <strong className="text-foreground">How do AI systems—particularly LLMs—shape human thought?</strong>{" "}
-                    Rather than viewing AI as a tool to be optimized, I see it as a <em>cognitive environment</em> that 
-                    fundamentally alters how we process information, form beliefs, and make decisions.
+                    My research begins with curiosity sparked by the world around me. My questions are often rooted in everyday observations of society, where personal experiences reveal deeper truths about the structures we live within. As the slogan “the personal is political” suggests, seemingly individual encounters can illuminate overlooked aspects of broader social systems.
                   </p>
                   <p>
-                    I approach this through two complementary lenses: studying the <strong className="text-foreground">epistemic effects</strong>{" "}
-                    of human-LLM interaction (filter bubbles, belief revision, persuasion), and exploring how LLMs can{" "}
-                    <strong className="text-foreground">augment human research</strong> in psychology and social science.
+                    I am motivated to use technology to promote social good. My work reflects on our technological progress, asking critical questions: <strong className="text-foreground">Why do certain innovations lead to unintended negative consequences in our society? How can we mitigate and address them?</strong>
                   </p>
                   <p>
-                    As an early-stage researcher, I'm particularly interested in asking questions that challenge 
-                    conventional assumptions—even if the answers remain elusive.
+                    I seek knowledge from diverse disciplines. I believe that progress happens  when we absorb voices from many places, and that lasting change comes from collaborative effort.
                   </p>
                 </div>
               </div>
@@ -85,29 +79,29 @@ const Index = () => {
               {/* LLM & Filter Bubble Direction */}
               <ResearchTopicCard
                 id="llm-filter-bubble"
-                title="Human-LLM Interaction & Filter Bubbles"
+                title="Human-LLM Interaction"
                 subtitle="How conversational AI shapes beliefs and information access"
                 image={llmInteractionImg}
+                // titleColor="text-foreground"
+                // subtitleColor="text-foreground/70"
                 projects={[
                   {
-                    title: "LLM's Impact on Human Belief Revision",
+                    title: "LLM's Impact on Human Belief",
                     status: "ongoing",
                     description:
-                      "Conducting experiments to examine whether LLMs function as a new form of filter bubble by selectively filtering information and reinforcing users' existing beliefs.",
-                    details:
-                      "Designed experiments comparing belief revision effects across different reasoning styles, prompting strategies, and frontier LLMs. Developed an online platform where participants engage in argumentative dialogues with LLMs on controversial topics.",
+                      "An online experiment testing whether LLM interactions reinforce existing beliefs and create echo chambers, and how different prompting strategies can facilitate belief revision.",
                   },
                   {
                     title: "LLM Robustness to Misinformation",
                     status: "starting",
                     description:
-                      "Evaluating how large language models respond to and potentially propagate misinformation during multi-turn conversations.",
+                      "Evaluating LLM stability when repeatedly exposed to misinformation during interaction. Does the model shift from rejecting false claims to accepting them?",
                   },
                   {
-                    title: "Generative Filter Bubbles: A Theoretical Framework",
+                    title: "Generative Filter Bubbles",
                     status: "completed",
                     description:
-                      "A conceptual paper arguing why LLMs serve as a new form of filter bubble, coining the term 'generative filter bubble' to describe AI-mediated information filtering.",
+                      "A perspective paper arguing that LLMs function as a new form of filter bubble, shaped by model mechanics, human cognition, and user interaction patterns.",
                     publication: "Paper in preparation",
                   },
                 ]}
@@ -117,48 +111,50 @@ const Index = () => {
               <ResearchTopicCard
                 id="llm-psychology"
                 title="LLM in Human Research"
-                subtitle="Leveraging AI to augment psychological and social science methods"
+                subtitle="Leveraging AI to augment psychological and social science research"
                 image={llmPsychologyImg}
                 projects={[
+                  {
+                    title: "LLM vs Human Response Distributions",
+                    status: "starting",
+                    description:
+                      "Comparing the statistical distributions of LLM-generated and human-generated responses in classic psychological research to understand where LLM can (and cannot) substitute for human participants.",
+                  },
                   {
                     title: "LLM-Driven Psychological Scale Generation",
                     status: "completed",
                     description:
                       "Developed a prompting-based framework using LLMs to generate psychological scale items tailored to diverse target populations and scenarios, reducing the need for extensive expert involvement.",
-                    details:
-                      "Pioneered a novel LLM-based evaluation metric and utilized BLEU scores to assess item diversity. Designed an intuitive interface for user interaction with the framework.",
-                    publication: "Co-first author paper accepted at ICASSP 2026",
-                  },
-                  {
-                    title: "LLM vs Human Response Distributions",
-                    status: "starting",
-                    description:
-                      "Comparing the statistical distributions of LLM-generated and human-generated responses in classic psychological research paradigms to understand where synthetic data can (and cannot) substitute for human data.",
+                    publication: "Paper accepted at ICASSP 2026",
                   },
                 ]}
               />
 
               {/* Ideas in Progress */}
-              <IdeasTopicCard
+              <ResearchTopicCard
                 id="ideas-card"
                 title="Nascent Research Ideas"
                 subtitle="These are early-stage ideas I'm actively exploring"
                 image={ideasImg}
-                ideas={[
+                
+                projects={[
                   {
-                    title: "Evaluating LLM Robustness to Misinformation",
+                    title: "Opinion Dynamics in Multi-Agent Simulated Social Groups",
+                    status: "ideas",
                     description:
-                      "Investigating how LLMs respond to and propagate misinformation across multiple interaction turns. Are they resilient to false claims, or do they amplify them?",
-                    lookingFor: ["Experimental Design", "NLP Expertise", "Data Collection"],
+                      "Exploring how opinion dynamics emerge in multi-agent LLM-based simulations of social groups and how different interaction patterns influence consensus or polarization.",
+                    // lookingFor: ["Agent-Based Modeling", "Social Simulation", "Data Collection"],
                   },
-                  {
-                    title: "Comparing LLM vs Human Response Distributions",
-                    description:
-                      "A methodological study comparing the statistical distributions of LLM-generated responses with human-generated data in classic psychological research paradigms.",
-                    lookingFor: ["Psychology Background", "Statistical Methods", "Human Subjects Research"],
-                  },
+                  // {
+                  //   title: "Bias in multimodel AI",
+                  //   status: "ideas",
+                  //   description:
+                  //     "Investigating whether LLMs exhibit cognitive biases similar to humans when generating responses, and how these biases propagate in multi-turn interactions.",
+                  //   // lookingFor: ["Cognitive Psychology", "Bias Detection", "Analysis Methods"],
+                  // },
                 ]}
               />
+              
             </div>
           </Section>
 
@@ -172,14 +168,14 @@ const Index = () => {
               <ProjectCard
                 title="Credit Risk Model Stability"
                 description="Developed machine learning models to assess credit risk by predicting loan default probabilities. Led data processing and feature engineering, training an ensemble model comprising LightGBM, XGBoost, CatBoost, and neural networks."
-                tags={["Machine Learning", "Python", "Feature Engineering", "Ensemble Methods"]}
+                tags={["Machine Learning", "Feature Engineering"]}
                 achievement="Silver Medal · 92nd/3,856 teams"
               />
               <ProjectCard
                 title="AI-Powered Job Search Platform"
                 description="Built an LLM-driven platform providing job information and interview preparation based on user inputs. Managed web-scraped data preprocessing and constructed a job information knowledge base using NLP tools."
                 tags={["LLM", "NLP", "Full-Stack", "Knowledge Base"]}
-                githubUrl="https://github.com/Cecilia-zwq"
+                githubUrl="https://github.com/Cecilia-zwq/Career-Assistant"
               />
             </div>
 
@@ -188,8 +184,8 @@ const Index = () => {
                 Technical Skills
               </h3>
               <p className="text-body-sm text-muted-foreground">
-                These projects reflect my proficiency in <strong>Python</strong>, <strong>machine learning frameworks</strong>{" "}
-                (PyTorch, scikit-learn, XGBoost), <strong>NLP/LLM tools</strong> (Transformers, prompting), 
+                These projects reflect my proficiency in <strong>Python, data processing and analysis, </strong><strong>machine learning frameworks</strong>{" "}
+                (PyTorch, scikit-learn, XGBoost), <strong>NLP/LLM tools</strong> (Transformers, prompt engineering), 
                 and <strong>full-stack development</strong> (Vue, Node, SpringBoot)—skills I actively apply in my research work.
               </p>
             </div>
