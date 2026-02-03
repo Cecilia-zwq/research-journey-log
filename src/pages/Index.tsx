@@ -8,6 +8,7 @@ import { IdeasTopicCard } from "@/components/IdeasTopicCard";
 import llmInteractionImg from "@/assets/research-llm-interaction.jpg";
 import llmPsychologyImg from "@/assets/research-llm-psychology.jpg";
 import ideasImg from "@/assets/ideas-in-progress.jpg";
+import profilePhoto from "@/assets/profile-photo.jpg";
 
 const Index = () => {
   return (
@@ -20,26 +21,25 @@ const Index = () => {
           {/* Hero / About Section */}
           <Section id="about" className="pt-24 md:pt-32">
             <div className="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12">
-              <ProfilePhoto />
+              <ProfilePhoto src={profilePhoto} alt="Wenqing (Cecilia) Zhang" />
               <div className="flex-1 text-center md:text-left">
                 <h1 className="heading-display text-foreground">
                   Wenqing Zhang
                 </h1>
                 <p className="text-lg text-accent font-medium mt-2">
-                  First-Year Master's Student in Computer Science
+                  Exploring Human-Centered AI for Social Good
                 </p>
                 <p className="text-muted-foreground mt-1">
-                  Western University, Canada
+                  MSc in Computer Science, Western University, Canada
                 </p>
                 <p className="text-body text-muted-foreground mt-6 leading-relaxed">
                   I study the intersection of <strong className="text-foreground">large language models</strong> and{" "}
-                  <strong className="text-foreground">human cognition</strong>—how AI systems shape our beliefs, 
-                  and how they can augment human research methodologies. My work bridges HCI, NLP, and psychology.
+                  <strong className="text-foreground">human cognition</strong>—how AI systems shape our beliefs and behavior, and how they can augment human research. My work bridges HCI, LLM, and psychology.
                 </p>
                 <div className="flex flex-wrap gap-3 mt-6 justify-center md:justify-start">
-                  <span className="tag tag-primary">Human-AI Interaction</span>
+                  <span className="tag tag-primary">Human-Centered AI</span>
+                  <span className="tag tag-primary">HCI</span>
                   <span className="tag tag-primary">Computational Social Science</span>
-                  <span className="tag tag-primary">NLP</span>
                 </div>
               </div>
             </div>
@@ -82,7 +82,7 @@ const Index = () => {
               Research Directions
             </SectionTitle>
 
-            <div className="grid md:grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-6 items-start">
               {/* LLM & Filter Bubble Direction */}
               <ResearchTopicCard
                 id="llm-filter-bubble"
@@ -138,35 +138,29 @@ const Index = () => {
                   },
                 ]}
               />
+
+              {/* Ideas in Progress */}
+              <IdeasTopicCard
+                id="ideas-card"
+                title="Nascent Research Ideas"
+                subtitle="These are early-stage ideas I'm actively exploring"
+                image={ideasImg}
+                ideas={[
+                  {
+                    title: "Evaluating LLM Robustness to Misinformation",
+                    description:
+                      "Investigating how LLMs respond to and propagate misinformation across multiple interaction turns. Are they resilient to false claims, or do they amplify them?",
+                    lookingFor: ["Experimental Design", "NLP Expertise", "Data Collection"],
+                  },
+                  {
+                    title: "Comparing LLM vs Human Response Distributions",
+                    description:
+                      "A methodological study comparing the statistical distributions of LLM-generated responses with human-generated data in classic psychological research paradigms.",
+                    lookingFor: ["Psychology Background", "Statistical Methods", "Human Subjects Research"],
+                  },
+                ]}
+              />
             </div>
-          </Section>
-
-          {/* Ideas in Progress Section */}
-          <Section id="ideas">
-            <SectionTitle subtitle="Open for collaboration">
-              Ideas in Progress
-            </SectionTitle>
-
-            <IdeasTopicCard
-              id="ideas-card"
-              title="Nascent Research Ideas"
-              subtitle="These are early-stage ideas I'm actively exploring"
-              image={ideasImg}
-              ideas={[
-                {
-                  title: "Evaluating LLM Robustness to Misinformation",
-                  description:
-                    "Investigating how LLMs respond to and propagate misinformation across multiple interaction turns. Are they resilient to false claims, or do they amplify them?",
-                  lookingFor: ["Experimental Design", "NLP Expertise", "Data Collection"],
-                },
-                {
-                  title: "Comparing LLM vs Human Response Distributions",
-                  description:
-                    "A methodological study comparing the statistical distributions of LLM-generated responses with human-generated data in classic psychological research paradigms.",
-                  lookingFor: ["Psychology Background", "Statistical Methods", "Human Subjects Research"],
-                },
-              ]}
-            />
           </Section>
 
           {/* Past Projects Section */}

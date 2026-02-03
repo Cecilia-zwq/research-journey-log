@@ -277,3 +277,8 @@
     }
   }
 }
+
+/* Add this rule or update existing grid styles */
+.grid.md\:grid-cols-2 {
+  align-items: start;
+}

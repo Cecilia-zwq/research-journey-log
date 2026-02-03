@@ -12,7 +12,6 @@ const sections: NavSection[] = [
   { id: "about", label: "About Me" },
   { id: "philosophy", label: "Research Philosophy" },
   { id: "research", label: "Research Directions" },
-  { id: "ideas", label: "Ideas in Progress" },
   { id: "projects", label: "Past Projects" },
 ];
 
