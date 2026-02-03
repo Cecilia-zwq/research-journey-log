@@ -31,7 +31,7 @@ export function ResearchTopicCard({
   return (
     <div id={id} className="card-research scroll-mt-24">
       {/* Header with image */}
-      <div className="relative h-48 overflow-hidden">
+      <div className="relative h-40 overflow-hidden">
         <img
           src={image}
           alt={title}

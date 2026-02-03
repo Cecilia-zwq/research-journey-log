@@ -3,7 +3,7 @@ import { ProfilePhoto } from "@/components/ProfilePhoto";
 import { Section, SectionTitle } from "@/components/Section";
 import { ResearchTopicCard } from "@/components/ResearchTopicCard";
 import { ProjectCard } from "@/components/ProjectCard";
-import { IdeasSection } from "@/components/IdeasSection";
+import { IdeasTopicCard } from "@/components/IdeasTopicCard";
 
 import llmInteractionImg from "@/assets/research-llm-interaction.jpg";
 import llmPsychologyImg from "@/assets/research-llm-psychology.jpg";
@@ -82,7 +82,7 @@ const Index = () => {
               Research Directions
             </SectionTitle>
 
-            <div className="grid gap-8">
+            <div className="grid md:grid-cols-2 gap-6">
               {/* LLM & Filter Bubble Direction */}
               <ResearchTopicCard
                 id="llm-filter-bubble"
@@ -138,30 +138,35 @@ const Index = () => {
                   },
                 ]}
               />
-
-              {/* Ideas in Progress */}
-              <div id="ideas" className="scroll-mt-24">
-                <div className="relative h-48 rounded-t-lg overflow-hidden mb-0">
-                  <img
-                    src={ideasImg}
-                    alt="Ideas in Progress"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-accent/90 via-accent/40 to-transparent" />
-                  <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <h3 className="heading-subsection text-accent-foreground">
-                      Ideas in Progress
-                    </h3>
-                    <p className="text-accent-foreground/80 text-sm mt-1">
-                      Open for collaboration
-                    </p>
-                  </div>
-                </div>
-                <div className="bg-card rounded-b-lg p-6">
-                  <IdeasSection />
-                </div>
-              </div>
             </div>
+          </Section>
+
+          {/* Ideas in Progress Section */}
+          <Section id="ideas">
+            <SectionTitle subtitle="Open for collaboration">
+              Ideas in Progress
+            </SectionTitle>
+
+            <IdeasTopicCard
+              id="ideas-card"
+              title="Nascent Research Ideas"
+              subtitle="These are early-stage ideas I'm actively exploring"
+              image={ideasImg}
+              ideas={[
+                {
+                  title: "Evaluating LLM Robustness to Misinformation",
+                  description:
+                    "Investigating how LLMs respond to and propagate misinformation across multiple interaction turns. Are they resilient to false claims, or do they amplify them?",
+                  lookingFor: ["Experimental Design", "NLP Expertise", "Data Collection"],
+                },
+                {
+                  title: "Comparing LLM vs Human Response Distributions",
+                  description:
+                    "A methodological study comparing the statistical distributions of LLM-generated responses with human-generated data in classic psychological research paradigms.",
+                  lookingFor: ["Psychology Background", "Statistical Methods", "Human Subjects Research"],
+                },
+              ]}
+            />
           </Section>
 
           {/* Past Projects Section */}
