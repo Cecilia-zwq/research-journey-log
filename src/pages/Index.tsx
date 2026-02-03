@@ -24,7 +24,7 @@ const Index = () => {
               <ProfilePhoto src={profilePhoto} alt="Wenqing (Cecilia) Zhang" />
               <div className="flex-1 text-center md:text-left">
                 <h1 className="heading-display text-foreground">
-                  Wenqing Zhang
+                  Wenqing (Cecilia) Zhang
                 </h1>
                 <p className="text-lg text-accent font-medium mt-2">
                   Exploring Human-Centered AI for Social Good
@@ -53,8 +53,7 @@ const Index = () => {
             <div className="prose prose-lg max-w-none">
               <div className="bg-card rounded-xl p-8 shadow-soft">
                 <blockquote className="border-l-4 border-accent pl-6 italic text-lg text-foreground/90 font-heading">
-                  "Technology is not neutral. Every AI system embeds assumptions that shape how we think, 
-                  what we believe, and who we become."
+                  "What is the meaning of life? That was all- a simple question; one that tended to close in on one with years, the great revelation had never come. The great revelation perhaps never did come. Instead, there were little daily miracles, illuminations, matches struck unexpectedly in the dark; here was one." ― Virginia Woolf
                 </blockquote>
                 <div className="mt-6 space-y-4 text-body text-muted-foreground">
                   <p>
