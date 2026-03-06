@@ -200,7 +200,7 @@ const Index = () => {
               <ProjectCard
                 title="AI-Powered Job Search Platform"
                 description="Built an LLM-driven platform providing job information and interview preparation based on user inputs. Managed web-scraped data preprocessing and constructed a job information knowledge base using NLP tools."
-                tags={["LLM", "NLP", "Full-Stack", "Knowledge Base"]}
+                tags={["LLM", "NLP", "RAG", "Full-Stack"]}
                 githubUrl="https://github.com/Cecilia-zwq/Career-Assistant"
               />
             </div>
