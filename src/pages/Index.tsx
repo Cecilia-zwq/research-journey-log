@@ -204,9 +204,6 @@ const Index = () => {
                   Get in touch
                 </a>
               </p>
-              <p className="mt-2">
-                © {new Date().getFullYear()} Wenqing Zhang · Research Trajectory
-              </p>
             </div>
           </footer>
         </div>
