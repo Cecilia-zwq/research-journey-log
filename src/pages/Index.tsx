@@ -134,7 +134,7 @@ const Index = () => {
               {/* Ideas in Progress */}
               <ResearchTopicCard
                 id="ideas-card"
-                title="Nascent Research Ideas"
+                title="Several Research Ideas"
                 subtitle="These are early-stage ideas I'm actively exploring"
                 image={ideasImg}
                 
