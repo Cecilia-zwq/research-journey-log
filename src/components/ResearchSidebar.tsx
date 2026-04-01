@@ -127,6 +127,22 @@ export function ResearchSidebar({ className }: ResearchSidebarProps) {
             >
               GitHub
             </a>
+            <a
+              href="https://linkedin.com/in/wenqing-zhang-7198a9321"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-sidebar-foreground transition-colors text-sm"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="/CV_research.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-sidebar-foreground transition-colors text-sm"
+            >
+              CV
+            </a>
           </div>
         </div>
       </aside>
