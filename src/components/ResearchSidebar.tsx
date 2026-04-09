@@ -11,8 +11,8 @@ interface NavSection {
 const sections: NavSection[] = [
   { id: "about", label: "About Me" },
   { id: "philosophy", label: "Research Philosophy" },
-  { id: "research", label: "Research Directions" },
-  { id: "projects", label: "Past Projects" },
+  { id: "research", label: "Research Projects" },
+  { id: "projects", label: "Technical Projects" },
 ];
 
 interface ResearchSidebarProps {

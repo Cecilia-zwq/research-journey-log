@@ -72,8 +72,8 @@ const Index = () => {
 
           {/* Research Section */}
           <Section id="research">
-            <SectionTitle subtitle="Current and past research work organized by theme">
-              Research Directions
+            <SectionTitle subtitle="Current and past research works organized by theme">
+              Research Projects
             </SectionTitle>
 
             <div className="grid md:grid-cols-2 gap-6 items-start">
@@ -94,7 +94,7 @@ const Index = () => {
                   },
                   {
                     title: "LLM Robustness to Misinformation",
-                    status: "starting",
+                    status: "ongoing",
                     description:
                       "Evaluating LLM stability when repeatedly exposed to misinformation during interaction. Does the model shift from rejecting false claims to accepting them?",
                   },
@@ -162,7 +162,7 @@ const Index = () => {
           {/* Past Projects Section */}
           <Section id="projects">
             <SectionTitle subtitle="Technical projects demonstrating skills applicable to research">
-              Past Projects
+              Technical Projects
             </SectionTitle>
 
             <div className="grid md:grid-cols-2 gap-6">
