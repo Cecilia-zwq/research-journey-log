@@ -127,6 +127,7 @@ const Index = () => {
                     description:
                       "Developed a prompting-based framework using LLMs to generate psychological scale items tailored to diverse target populations and scenarios, reducing the need for extensive expert involvement.",
                     publication: "Paper accepted at ICASSP 2026",
+                    link: "https://ieeexplore.ieee.org/document/11463041",
                   },
                 ]}
               />
