@@ -100,7 +100,7 @@ const Index = () => {
                   },
                   {
                     title: "Generative Filter Bubbles",
-                    status: "completed",
+                    // status: "completed",
                     description:
                       "A perspective paper arguing that LLMs function as a new form of filter bubble, shaped by model mechanics, human cognition, and user interaction patterns.",
                     publication: "Paper in preparation",
@@ -117,14 +117,14 @@ const Index = () => {
                 projects={[
                   {
                     title: "LLM vs Human Response Comparison",
-                    status: "submitted",
+                    // status: "completed",
                     description:
                       "Comparing the statistical distributions of LLM-generated and human-generated responses in classic psychological research to understand where LLM can (and cannot) substitute for human participants.",
-                    publication: "Paper Submitted to NeurIPS 2026 Evaluations & Datasets Track",
+                    publication: "Submitted to NeurIPS 2026 Evaluations & Datasets Track",
                   },
                   {
                     title: "LLM-Driven Psychological Scale Generation",
-                    status: "published",
+                    // status: "completed",
                     description:
                       "Developed a prompting-based framework using LLMs to generate psychological scale items tailored to diverse target populations and scenarios, reducing the need for extensive expert involvement.",
                     publication: "Paper accepted at ICASSP 2026",
