@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 
 interface ResearchProject {
   title: string;
-  status: "ongoing" | "completed" | "starting" | "ideas";
+  status: "ongoing" | "completed" | "starting" | "ideas" | "submitted" | "published";
   description: string;
   details?: string;
   publication?: string;
