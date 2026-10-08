@@ -34,7 +34,7 @@ const Index = () => {
                 </p>
                 <p className="text-body text-muted-foreground mt-6 leading-relaxed">
                   I study the intersection of <strong className="text-foreground">large language models</strong> and{" "}
-                  <strong className="text-foreground">human cognition</strong>—how AI systems shape our beliefs and behavior, and how they can augment human research. My work bridges HCI, LLM, and psychology.
+                  <strong className="text-foreground">human cognition</strong>—how AI systems shape our beliefs and behavior, and how they can augment human research. My work draws on human-computer interaction, AI, and psychology.
                 </p>
                 <div className="flex flex-wrap gap-3 mt-6 justify-center md:justify-start">
                   <span className="tag tag-primary">Human-Centered AI</span>
@@ -88,22 +88,29 @@ const Index = () => {
                 projects={[
                   {
                     title: "LLM's Impact on Human Belief",
-                    status: "ongoing",
+                    status: "starting",
                     description:
                       "An online experiment testing whether LLM interactions reinforce existing beliefs and create echo chambers, and how different prompting strategies can facilitate belief revision.",
                   },
                   {
+                    title: "AI Integration in Group Decision-Making",
+                    status: "starting",
+                    description:
+                      "In collaboration with Toronto's University Health Network, a study evaluating how AI assistance shapes group decision-making in transplant candidacy assessments.",
+                  },
+                  {
                     title: "LLM Robustness to Misinformation",
-                    status: "ongoing",
+                    // status: "ongoing",
                     description:
                       "Evaluating LLM stability when repeatedly exposed to misinformation during interaction. Does the model shift from rejecting false claims to accepting them?",
+                    publication: "Paper in preparation",
                   },
                   {
                     title: "Generative Filter Bubbles",
                     // status: "completed",
                     description:
                       "A perspective paper arguing that LLMs function as a new form of filter bubble, shaped by model mechanics, human cognition, and user interaction patterns.",
-                    publication: "Paper in preparation",
+                    publication: "Accepted at The Canadian Journal of Science Communication",
                   },
                 ]}
               />
@@ -120,14 +127,14 @@ const Index = () => {
                     // status: "completed",
                     description:
                       "Comparing the statistical distributions of LLM-generated and human-generated responses in classic psychological research to understand where LLM can (and cannot) substitute for human participants.",
-                    publication: "Submitted to NeurIPS 2026 Evaluations & Datasets Track",
+                    publication: "Submitted to ACM Conference on Human Factors in Computing Systems (CHI)",
                   },
                   {
                     title: "LLM-Driven Psychological Scale Generation",
                     // status: "completed",
                     description:
                       "Developed a prompting-based framework using LLMs to generate psychological scale items tailored to diverse target populations and scenarios, reducing the need for extensive expert involvement.",
-                    publication: "Paper accepted at ICASSP 2026",
+                    publication: "Published in ICASSP 2026",
                     link: "https://ieeexplore.ieee.org/document/11463041",
                   },
                 ]}
